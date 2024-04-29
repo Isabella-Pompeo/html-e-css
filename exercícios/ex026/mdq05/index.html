@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <span id ="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <li><a href="#">Opção 1</a></li>
             <li><a href="#">Opção 2</a></li>
             <li><a href="#">Opção 3</a></li>
@@ -21,9 +23,21 @@
         <article>
             <h2>Testando Media Queries</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel delectus excepturi hic quasi optio explicabo laboriosam cum earum asperiores magnam, harum illum non reprehenderit, aliquam quo accusantium deleniti cumque exercitationem! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus ratione deleniti vero, mollitia cumque cupiditate? Voluptates repudiandae fugiat odit suscipit eius quaerat deserunt, dolore qui, reprehenderit, dignissimos amet vero. Vel?</p>
+
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui in molestiae laboriosam sit quidem perspiciatis cupiditate minima a quaerat, saepe quod, ex porro ab aut modi possimus incidunt quo? Corrupti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores debitis ipsam est nam in ipsum distinctio, tenetur earum iste ea dolorum unde minus ab autem aspernatur recusandae! Doloremque, ratione rem!</p>
+
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum cumque quasi perferendis ipsum enim id non cum, ut tempore, necessitatibus magnam sapiente illum quisquam dolores, voluptatem saepe autem temporibus tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum velit sequi explicabo reiciendis dicta alias quo eius ratione, at doloribus ea rerum illo veritatis optio dolorem. Repellendus aspernatur iusto doloremque.</p>
         </article>
     </main>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }  
+    </script>
 </body>
 </html>
